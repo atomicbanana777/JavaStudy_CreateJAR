@@ -3,7 +3,25 @@ Create a sample executable .jar file
 
 To compile and create a JAR file, you need
 ## 1. install JAVA JDK so that you can run java command e.g. javac, jar, java
-## 2. create a folder/directory and clone the repository
+## 2. clone the repository
+
+`git clone https://github.com/atomicbanana777/JavaStudy_CreateJAR.git`
+
+`ls -R`
+```
+.:
+JavaStudy_CreateJAR
+
+./JavaStudy_CreateJAR:
+MANIFEST.mf  README.md  src
+
+./JavaStudy_CreateJAR/src:
+main
+
+./JavaStudy_CreateJAR/src/main:
+CreateJAR.java
+```
+
 ## 3. run java compile command in the same directory of step 2
    `javac -d bin src/main/*.java`
 
