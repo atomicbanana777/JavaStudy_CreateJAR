@@ -68,11 +68,11 @@ CreateJAR.java
    For example:
    
    you have /bin/main/CreateJAR.class where package is main
-      1. you go to the default package which is bin
+    1. you go to the default package which is bin
    
    `cd bin`
    
-      2. run the command with m or e 
+    2. run the command with m or e 
    
    `jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class`
    
