@@ -5,15 +5,15 @@ To compile and create a JAR file, you need
 1. install JAVA JDK so that you can run java command e.g. javac, jar, java
 2. create a folder/directory and clone the repository
 3. run java compile command in the same directory of step 2
-   e.g. javac -d bin src/main/*.java
+   `javac -d bin src/main/*.java`
 
    The above command will compile .java into .class and put it in a folder "bin"
-   javac = java compile
-   -d bin = create directory named "bin"
+   - javac = java compile
+   - -d bin = create directory named "bin"
    
 4. run jar command to create jar file
    below are linux command
-    cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..
+   `cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..`
     or
     cd bin ; jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class ; cd ..
 
