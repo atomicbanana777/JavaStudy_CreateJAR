@@ -35,17 +35,17 @@ CreateJAR.java
    
    `cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..`
    
-    or
+   or
    
    `cd bin ; jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class ; cd ..`
 
-    - cd bin = You change directory to "bin"
-    - jar = run jar command
-    - c = create
-    - v = verbose
-    - f = file
-    - m = manifest file
-    - e = entry point
+   - cd bin = You change directory to "bin"
+   - jar = run jar command
+   - c = create
+   - v = verbose
+   - f = file
+   - m = manifest file
+   - e = entry point
 
     The first command is to create .jar file by providing entry point so that you don't need MANIFEST.mf file
     It will auto create a MANIFEST.mf file for you with main class = main.CreateJAR
