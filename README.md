@@ -48,9 +48,11 @@ To compile and create a JAR file, you need
     
     And your jar file will look something like this
     `jar -tvf CreateJAR.jar`
-    >     0 Sun Feb 02 18:36:40 HKT 2025 META-INF/
-    >    82 Sun Feb 02 18:36:40 HKT 2025 META-INF/MANIFEST.MF
-    >   429 Sun Feb 02 18:03:10 HKT 2025 main/CreateJAR.class
+   <addr>
+        0 Sun Feb 02 18:36:40 HKT 2025 META-INF/
+       82 Sun Feb 02 18:36:40 HKT 2025 META-INF/MANIFEST.MF
+      429 Sun Feb 02 18:03:10 HKT 2025 main/CreateJAR.class
+   </addr>
     
     The main point is you have to maintain the structure of main/CreateJAR.class inside the JAR
     even though your folder structure is bin/main/CreateJAR.class
