@@ -47,48 +47,48 @@ CreateJAR.java
    - m = manifest file
    - e = entry point
 
-    The first command is to create .jar file by providing entry point so that you don't need MANIFEST.mf file
-    It will auto create a MANIFEST.mf file for you with main class = main.CreateJAR
+   The first command is to create .jar file by providing entry point so that you don't need MANIFEST.mf file
+   It will auto create a MANIFEST.mf file for you with main class = main.CreateJAR
 
    e.g.
-
-    `cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..`
-
-    The second command is to create .jar file by providing MANIFEST.mf
-
-    e.g.
-
-    `cd bin ; jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class ; cd ..`
-
-    You cannot run the create jar command anywhere you like that why we need "cd bin"
-    The directory that you run is very important otherwise the JAR cannot execute
-    You have to run it in the correct directory
-
-    For example:
    
-    you have /bin/main/CreateJAR.class where package is main
-    1. you go to the default package which is bin
-
+   `cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..`
+   
+   The second command is to create .jar file by providing MANIFEST.mf
+   
+   e.g.
+   
+   `cd bin ; jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class ; cd ..`
+   
+   You cannot run the create jar command anywhere you like that why we need "cd bin"
+   The directory that you run is very important otherwise the JAR cannot execute
+   You have to run it in the correct directory
+   
+   For example:
+   
+   you have /bin/main/CreateJAR.class where package is main
+   1. you go to the default package which is bin
+   
    `cd bin`
-
-    2. run the command with m or e 
-    
-    `jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class`
-
-    `jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class`
-
-     And your jar file will look something like this
-
-    `jar -tvf CreateJAR.jar`
+   
+   2. run the command with m or e 
+   
+   `jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class`
+   
+   `jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class`
+   
+   And your jar file will look something like this
+   
+   `jar -tvf CreateJAR.jar`
    ```
-        0 Sun Feb 02 18:36:40 HKT 2025 META-INF/
-       82 Sun Feb 02 18:36:40 HKT 2025 META-INF/MANIFEST.MF
-      429 Sun Feb 02 18:03:10 HKT 2025 main/CreateJAR.class
+   0 Sun Feb 02 18:36:40 HKT 2025 META-INF/
+   82 Sun Feb 02 18:36:40 HKT 2025 META-INF/MANIFEST.MF
+   429 Sun Feb 02 18:03:10 HKT 2025 main/CreateJAR.class
    ```
-    
-    The main point is you have to maintain the structure of main/CreateJAR.class inside the JAR
-    even though your folder structure is bin/main/CreateJAR.class
-    otherwise, the JAR cannot find your class file
+   
+   The main point is you have to maintain the structure of main/CreateJAR.class inside the JAR
+   even though your folder structure is bin/main/CreateJAR.class
+   otherwise, the JAR cannot find your class file
    
 ## 5. execute .jar file
 
