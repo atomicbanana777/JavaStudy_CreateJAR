@@ -15,7 +15,9 @@ To compile and create a JAR file, you need
    below are linux command
    
    `cd bin ; jar cvfe ../CreateJAR.jar main.CreateJAR main/*.class ; cd ..`
+   
     or
+   
    `cd bin ; jar cvfm ../CreateJAR.jar ../MANIFEST.mf main/*.class ; cd ..`
 
     - cd bin = You change directory to "bin"
