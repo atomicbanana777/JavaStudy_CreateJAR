@@ -95,6 +95,6 @@ CreateJAR.java
 
    e.g.
    
-    `java -jar CreateJAR.jar`
-
+   `java -jar CreateJAR.jar`
+   
    it will output "Hello World!"
